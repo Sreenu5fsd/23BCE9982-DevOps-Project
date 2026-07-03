@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us — ABC Technologies</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="status-strip">
+  <div class="marquee">
+    <span><span class="dot">●</span> WEB SERVICE — OK</span>
+    <span><span class="dot">●</span> API — OK</span>
+    <span><span class="dot">●</span> K8S PODS 3/3 — RUNNING</span>
+    <span><span class="dot">●</span> UPTIME — 99.98%</span>
+    <span><span class="dot">●</span> WEB SERVICE — OK</span>
+    <span><span class="dot">●</span> API — OK</span>
+    <span><span class="dot">●</span> K8S PODS 3/3 — RUNNING</span>
+    <span><span class="dot">●</span> UPTIME — 99.98%</span>
+  </div>
+</div>
+
+<header class="site">
+  <nav class="main wrap">
+    <a href="index.html" class="brand"><span class="mark"></span> ABC Technologies</a>
+    <ul class="navlinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="careers.html">Careers</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom:40px;">
+    <div class="wrap" style="max-width:760px;">
+      <span class="eyebrow">Contact</span>
+      <h1>Let's talk about what you're building.</h1>
+      <p class="lead">Whether it's a new project, a role you're applying for, or a question about our platform — reach out.</p>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap grid-2">
+      <div class="panel">
+        <h3 style="margin-top:0;">Send a message</h3>
+        <form id="contactForm">
+          <div class="form-grid">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="field full">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="field full">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Send message →</button>
+          <div id="formNote"></div>
+        </form>
+      </div>
+
+      <div>
+        <div class="panel" style="margin-bottom:20px;">
+          <h3 style="margin-top:0;">Reach us directly</h3>
+          <ul class="info-list">
+            <li><span class="k">Email</span><span>hello@abctechnologies.example</span></li>
+            <li><span class="k">Phone</span><span>+91 40 4567 8901</span></li>
+            <li><span class="k">Office</span><span>Level 6, Tower B, HITEC City, Hyderabad, India</span></li>
+            <li><span class="k">Hours</span><span>Mon–Fri, 9:30 AM – 6:30 PM IST</span></li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3 style="margin-top:0;">Support</h3>
+          <p style="color:var(--ink-soft); margin:0;">Existing clients can reach the on-call platform team any time through the support portal for urgent issues.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap footer-grid">
+    <div>
+      <h4>ABC Technologies</h4>
+      <p style="max-width:32ch; font-size:14px;">Software and infrastructure for businesses that can't afford downtime.</p>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Get in touch</h4>
+      <ul>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© 2026 ABC Technologies</span>
+    <span>Built • Deployed via Jenkins → Docker → Kubernetes</span>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
