@@ -48,7 +48,7 @@ pipeline {
                     docker rm -f abc-technologies-test || true
                     docker run -d --name abc-technologies-test -p 8085:80 abc-technologies:latest
                     sleep 3
-                    curl -f http://localhost:8085/ || (echo "Site did not respond" && exit 1)
+                    curl -f http://host.docker.internal:8085/ || (echo "Site did not respond" && exit 1)
                     docker rm -f abc-technologies-test
                 '''
             }
